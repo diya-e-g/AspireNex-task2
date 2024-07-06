@@ -1,5 +1,5 @@
 :root {
-  --text: rgb(0, 12, 31);
+  --text: rgb(255, 255, 255); 
 }
 
 * {
@@ -10,23 +10,25 @@
 }
 
 body {
-  background: #8A84E2;
+  background: #000; 
+  color: var(--text); 
 }
 
 .app {
-  background: #fff;
+  background: #333; 
   width: 90%;
   max-width: 600px;
   margin: 100px auto 0;
   border-radius: 10px;
   padding: 30px;
+  color: var(--text); 
 }
 
 .app h1 {
   font-size: 25px;
   color: var(--text);
   font-weight: 600;
-  border-bottom: 1px solid rgb(0, 14, 36);
+  border-bottom: 1px solid var(--text);
   padding-bottom: 30px;
   text-align: center;
 }
@@ -43,11 +45,11 @@ body {
 }
 
 .btn {
-  background: #fff;
-  color: #222;
+  background: #444;
+  color: var(--text); 
   font-weight: 500;
   width: 100%;
-  border: 1px solid #222;
+  border: 1px solid var(--text);
   padding: 10px;
   margin: 10px 0;
   text-align: center;
@@ -59,8 +61,8 @@ body {
 }
 
 .btn:hover:not([disabled]) {
-  background: #222;
-  color: #fff;
+  background: var(--text); 
+  color: #000; 
 }
 
 .btn:disabled {
@@ -68,8 +70,8 @@ body {
 }
 
 #next-btn {
-  background: #8A84E2;
-  color: var(--text);
+  background: var(--text); 
+  color: #000; 
   font-weight: 500;
   width: 150px;
   border: 0;
@@ -91,9 +93,9 @@ body {
 #creator-form .question-block {
   margin-bottom: 20px;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #555; 
   border-radius: 5px;
-  background: #f9f9f9;
+  background: #444; 
 }
 
 #creator-form .question-block label {
@@ -107,8 +109,10 @@ body {
   width: calc(100% - 20px);
   padding: 8px 10px;
   margin-bottom: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #555; 
   border-radius: 5px;
+  background: #333; 
+  color: var(--text); 
 }
 
 .quiz-item {
@@ -129,12 +133,12 @@ body {
   top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: #fff;
-  color: #222;
+  background: #333; 
+  color: var(--text); 
   padding: 20px;
-  border: 2px solid #222;
+  border: 2px solid var(--text);
   border-radius: 10px;
   font-size: 18px;
   text-align: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); 
 }
